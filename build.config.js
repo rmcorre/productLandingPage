@@ -191,7 +191,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.eot|\.ttf|\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [{ loader: 'url-loader' }]
       }
     ]

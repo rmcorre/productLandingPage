@@ -1,6 +1,7 @@
 const path = require('path');
 const glob = require('glob-all');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -25,13 +26,18 @@ module.exports = {
   plugins: [
     new htmlWebpackPlugin({
       template: 'src/index.html',
+      // Inline all files which names start with “runtime~” and end with “.js”.
+      // That’s the default naming of runtime chunks
+      inlineSource: 'runtime~.+\\.js',
       minify: {
+        // Does not minify html here.
+        // Use minimize on html-loader instead.
         collapseWhitespace: true,
         conservativeCollapse: true,
         minifyCSS: true,
         minifyJS: true,
         minifyURLs: true,
-        quoteCharacter: "'",
+        quoteCharacter: "'", //eslint-disable-line
         removeComments: true,
         removeEmptyAttributes: true,
         removeScriptTypeAttributes: true,
@@ -39,6 +45,9 @@ module.exports = {
         useShortDoctype: true
       }
     }),
+    // This plugin enables the “inlineSource” option on the html-webpack-plugin
+    // to inline scripts in the html
+    new InlineSourcePlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css'
     }),
@@ -120,7 +129,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.eot|\.ttf|\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [{ loader: 'url-loader' }]
       }
     ]

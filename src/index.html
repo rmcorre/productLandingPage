@@ -13,15 +13,151 @@
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <!-- <link rel="apple-touch-icon" href="icon.png"> -->
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Signika" rel="stylesheet">
   <!-- Place favicon.ico in the root directory -->
 </head>
 
-<body>
+<body class="grid-auto-1">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div>Site Content Here</div>
+  <header id="header" class="grid-auto-1">
+    <nav id="nav-bar" class="nav-bar flex-col">
+      <div class="navbar-brand flex-row">
+        <div class="logo-item">
+          <img id="header-img" class="header-img" src="./img/logo.png" alt="">
+        </div>
+        <div class="brand-item">
+          <a class="brand-text" href="#"></a>
+        </div>
+        <button class="toggler-item" id="toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" arial-label="Toggle navigation">
+          <span class="toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-nav flex-col collapse">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#merchandising">Merchandising</a>
+        <a class="nav-link" href="#logistics">Logisitcs</a>
+        <a class="nav-link" href="#quality">Quality</a>
+      </div>
+    </nav>
+    <p class="header-text">Tantalize All Taste Buds...</p>
+    <button class="primary-button">Take a bite!</button>
+  </header>
+  <main class="grid-auto-1">
+    <section id="about" class="grid-auto-1 about">
+      <h1 class="title">THE AZOREAN PINEAPPLE</h1>
+      <i class="flaticon-organic-1"></i>
+      <h2>Sub Heading One</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <i class="flaticon-farm"></i>
+      <h2>Sub Heading Two</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <i class="flaticon-greenhouse"></i>
+      <h2>Sub Heading Three</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <iframe id="video" width="250" height="140" src="https://www.youtube.com/embed/smPpIv8Xd6U">
+      </iframe>
+    </section>
+    <section id="merchandising" class="merchandising">
+      <h1 class="title">MERCHANDISING</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <div class="img-group-caixa">
+        <picture class="caixaOne">
+          <source media="(max-width: 480px)" srcset="./img/caixaOne320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+        <picture class="caixaTwo">
+          <source media="(max-width: 480px)" srcset="./img/caixaTwo320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+        <picture class="caixaFour">
+          <source media="(max-width: 480px)" srcset="./img/caixaFour320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+      </div>
+    </section>
+    <section id="logistics" class="logistics">
+      <h1 class="title">LOGISTICS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <!-- <i class="flaticon-logistics-delivery-truck-in-movement"></i> -->
+      <div class="img-group-logistics">
+        <picture class="logistics1">
+          <source media="(max-width: 480px)" srcset="./img/logistics320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+      </div>
+    </section>
+    <section id="quality" class="quality">
+      <h1 class="title">Quality</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
+        nam.
+      </p>
+      <div class="img-group-quality">
+        <picture class="quality1">
+          <source media="(max-width: 480px)" srcset="./img/sealTwo320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+        <picture class="quality2">
+          <source media="(max-width: 480px)" srcset="./img/sealThree320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+        <picture class="quality3">
+          <source media="(max-width: 480px)" srcset="./img/sealOne320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+        <picture class="quality4">
+          <source media="(max-width: 480px)" srcset="./img/pineappleTwo320.png">
+          <img src="./img/caixa1.png" alt="">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <section class="contact">
+    <div class="socialMedia">
+      <p class="socialMediaHeading">FOLLOW US</p>
+      <div class="socialMediaIcons">
+        <i class="flaticon-facebook"></i>
+        <i class="flaticon-twitter-logo-silhouette"></i>
+        <i class="flaticon-google-plus"></i>
+      </div>
+    </div>
+    <form id="form" class="emailForm" action="">
+      <input id="email" class="email" type="email" placeholder="Email Address"
+        required>
+      <input id="submit" class="submit" type="submit">
+    </form>
+  </section>
+  <footer class="grid-100-2">
+    <p class="copyright cell-0-0">copyright 2018</p>
+    <p class="backToTop cell-0-1">Back to Top</p>
+  </footer>
+
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
