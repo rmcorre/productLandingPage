@@ -11,10 +11,8 @@ const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const DuplicatPackageCheckerWebpackPlugin = require('duplicate-package-checker-webpack-plugin');
-const postcssPresetEnv = require('postcss-preset-env');
 
 module.exports = {
   entry: {
@@ -38,8 +36,7 @@ module.exports = {
         cache: true,
         parallel: true,
         sourceMap: false
-      }),
-      new OptimizeCssAssetsPlugin()
+      })
     ]
   },
   plugins: [
@@ -84,6 +81,7 @@ module.exports = {
       }
     }),
     new HtmlCriticalWebpackPlugin({
+      //Order is important (HtmlWebpackPlugin, MiniCssExtractPlugin, HtmlCriticalWebpackPlugin)
       //Operates on file system therefore acts as a post build plugin
       //Watch for css values that have a leading zero.
       //Critical removes leading zeros from inlined styles which
@@ -126,17 +124,11 @@ module.exports = {
         use: [{ loader: 'babel-loader' }]
       },
       {
-        test: /\.s?[ac]ss$/,
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: () => [postcssPresetEnv()]
-            }
-          },
+          'css-loader',
+          'postcss-loader',
           'sass-loader'
         ]
       },

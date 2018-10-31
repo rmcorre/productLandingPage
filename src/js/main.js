@@ -1,8 +1,7 @@
 import './vendor/modernizr-3.6.0.min';
 import './plugins.js';
 import '../img/my-icons-collection/font/flaticon.css';
-import '../css/normalize.css';
-import '../css/bootstrap-reboot.css';
+import '../css/myReboot.css';
 import '../css/main.css';
 
 // collapse ----------------------------------------------------------------------

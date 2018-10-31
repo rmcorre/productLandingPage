@@ -74,7 +74,8 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
+          // Using postcss during dev is extremely slow
+          // 'postcss-loader',
           'sass-loader'
         ]
       },
