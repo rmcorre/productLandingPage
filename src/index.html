@@ -1,165 +1,322 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Title to display in browser tab</title>
+    <meta name="description" content="Description of the page" />
+    <meta name="author" content="Ross Correia" />
+    <meta name="keywords" content="Keyword for seo" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Title to display in browser tab</title>
-  <meta name="description" content="Description of the page">
-  <meta name="author" content="Ross Correia">
-  <meta name="keywords" content="Keyword for seo">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Signika"
+      rel="stylesheet"
+    />
+    <!-- Place favicon.ico in the root directory -->
+  </head>
 
-  <!-- <link rel="manifest" href="site.webmanifest"> -->
-  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
-  <link href="https://fonts.googleapis.com/css?family=Anton|Signika" rel="stylesheet">
-  <!-- Place favicon.ico in the root directory -->
-</head>
+  <body class="grid-auto-1">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body class="grid-auto-1">
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <header id="header" class="grid-auto-1 bg-img-hero">
-    <nav id="nav-bar" class="site-nav flex-col bg-white">
-      <div id="brand " class="flex-row">
-        <div id="logo" class="align-center">
-          <img id="header-img" src="./img/logo.png" alt="">
+    <header id="header" class="header grid-auto-1">
+      <nav id="nav-bar" class="site-nav">
+        <img
+          id="header-img"
+          class="logo"
+          src="./img/logo1.png"
+          width="30"
+          height="30"
+          alt=""
+        />
+        <a class="logo-text" href="#">ANANAS</a>
+        <div class="nav-links collapse">
+          <a class="nav-link" data-scroll href="#about">About</a>
+          <a class="nav-link" data-scroll href="#merchandising"
+            >Merchandising</a
+          >
+          <a class="nav-link" data-scroll href="#logistics">Logisitcs</a>
+          <a class="nav-link" data-scroll href="#quality">Quality</a>
         </div>
-        <div id="text">
-          <a href="#"></a>
-        </div>
-        <button id="toggler" class="toggler" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" arial-label="Toggle navigation">
+        <button
+          id="toggler"
+          class="toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-bar"
+          aria-controls="#nav-bar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="toggler-icon"></span>
         </button>
-      </div>
-      <div class="nav-links flex-col collapse">
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#merchandising">Merchandising</a>
-        <a class="nav-link" href="#logistics">Logisitcs</a>
-        <a class="nav-link" href="#quality">Quality</a>
-      </div>
-    </nav>
-    <p class="lead align-center text-center">Tantalize All Taste Buds...</p>
-    <button class="primary-btn justify-center">Take a bite!</button>
-  </header>
-  <main>
-    <section class="about grid-auto-1 justify-items-center bg-white">
-      <h1 class="text-center">THE AZOREAN PINEAPPLE</h1>
-      <i class="flaticon-organic-1"></i>
-      <h2>Sub Heading One</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Felis bibendum ut tristique et egestas quis. Tempus quam
-        pellentesque nec nam.
-      </p>
-      <i class="flaticon-farm"></i>
-      <h2>Sub Heading Two</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Felis bibendum ut tristique et egestas quis. Tempus quam
-        pellentesque nec nam.
-      </p>
-      <i class="flaticon-greenhouse"></i>
-      <h2>Sub Heading Three</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Felis bibendum ut tristique et egestas quis. Tempus quam
-        pellentesque nec nam.
-      </p>
-      <iframe id="video" width="250" height="140" src="https://www.youtube.com/embed/smPpIv8Xd6U">
-      </iframe>
-    </section>
-    <section class="merchandising grid-auto-1 bg-yellow">
-      <h1>MERCHANDISING</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
-        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
-        nam.
-      </p>
-      <div class="img-group-caixa">
-        <picture class="caixaOne">
-          <source media="(max-width: 480px)" srcset="./img/caixaOne320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-        <picture class="caixaTwo">
-          <source media="(max-width: 480px)" srcset="./img/caixaTwo320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-        <picture class="caixaFour">
-          <source media="(max-width: 480px)" srcset="./img/caixaFour320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-      </div>
-    </section>
-    <section class="logistics grid-auto-1 bg-green">
-      <h1 class="text-right">LOGISTICS</h1>
-      <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Felis bibendum ut tristique et egestas quis. Tempus quam
-        pellentesque nec nam.
-      </p>
-      <!-- <i class="flaticon-logistics-delivery-truck-in-movement"></i> -->
-      <div class="img-group-logistics">
-        <picture class="logistics1">
-          <source media="(max-width: 480px)" srcset="./img/logistics320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-      </div>
-    </section>
-    <section class="quality grid-auto-1 bg-purple">
-      <h1>Quality</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
-        bibendum ut tristique et egestas quis. Tempus quam pellentesque nec
-        nam.
-      </p>
-      <div class="img-group-quality">
-        <picture class="seal1">
-          <source media="(max-width: 480px)" srcset="./img/sealTwo320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-        <picture class="seal2">
-          <source media="(max-width: 480px)" srcset="./img/sealThree320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-        <picture class="seal3">
-          <source media="(max-width: 480px)" srcset="./img/sealOne320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-        <picture class="pineapple4">
-          <source media="(max-width: 480px)" srcset="./img/pineappleTwo320.png">
-          <img src="./img/caixa1.png" alt="">
-        </picture>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <section class="subscribe grid-auto-1">
-      <div>
-        <h1>FOLLOW US</h1>
-        <div class="socialMediaIcons">
-          <i class="flaticon-facebook"></i>
-          <i class="flaticon-twitter-logo-silhouette"></i>
-          <i class="flaticon-google-plus"></i>
+      </nav>
+      <section class="hero">
+        <div class="heading text-center">
+          <img
+            id="stamp"
+            class="stamp"
+            src="./img/organicStamp.png"
+            width="160"
+            alt=""
+          />
         </div>
-      </div>
-      <form id="form" action="">
-        <input id="email" type="email" placeholder="Email Address" required>
-        <input id="submit" type="submit">
-      </form>
-    </section>
-    <aside class="grid-100-2 bg-purple">
-      <p class="copyright cell-1-2 align-center">copyright 2018</p>
-      <p class="backToTop cell-2-3 align-center">Back to Top</p>
-    </aside>
-  </footer>
+        <div class="lead-mod">
+          <div class="lead-frame">
+            <p class="lead text-center">Tantalizing Taste Buds...</p>
+          </div>
+          <div class="btn-frame">
+            <a class="primary-btn" href="">Take a bite!</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <h1>The AZOREAN PINEAPPLE</h1>
+        <div class="card-group">
+          <div class="card text-center">
+            <i class="flaticon-organic-1"></i>
+            <h3>Sub Heading One</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+          </div>
+          <div class="card text-center">
+            <i class="flaticon-farm"></i>
+            <h3>Sub Heading Two</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+          </div>
+          <div class="card text-center">
+            <i class="flaticon-greenhouse"></i>
+            <h3 class="text-center">Sub Heading Three</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+          </div>
+        </div>
+        <iframe
+          title="Pineapple Cultivation"
+          id="video"
+          width="250"
+          height="140"
+          src="https://www.youtube.com/embed/smPpIv8Xd6U"
+        >
+        </iframe>
+      </section>
+      <section id="merchandising" class="bg-yellow">
+        <div class="services merchandising">
+          <div class="summary">
+            <h2>MERCHANDISING</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+          </div>
+          <a class="primary-btn" href="">Take a bite!</a>
+          <div class="img-group-caixa">
+            <picture class="caixaOne">
+              <source
+                media="(min-width: 960px)"
+                srcset="./img/caixaOne480.png"
+              />
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/caixaOne480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/caixaOne320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+            <picture class="caixaTwo">
+              <source
+                media="(min-width: 960px)"
+                srcset="./img/caixaTwo480.png"
+              />
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/caixaTwo480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/caixaTwo320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+            <picture class="caixaThree">
+              <source
+                media="(min-width: 960px)"
+                srcset="./img/caixaThree480.png"
+              />
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/caixaThree480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/caixaThree320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section id="logistics" class="bg-green">
+        <div class="services logistics">
+          <div class="summary">
+            <h2>LOGISTICS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+            <!--
+              <i class="flaticon-logistics-delivery-truck-in-movement"></i>
+            -->
+          </div>
+          <a class="primary-btn" href="">Take a bite!</a>
+          <div class="img-group-logistics">
+            <picture class="logistics1">
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/logistics480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/logistics320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section id="quality" class="bg-purple">
+        <div class="services quality">
+          <div class="summary">
+            <h2>Quality</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+              bibendum ut tristique et egestas quis. Tempus quam pellentesque
+              nec nam.
+            </p>
+          </div>
+          <a class="primary-btn" href="">Take a bite!</a>
+          <div class="img-group-quality">
+            <picture class="seal1">
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/sealTwo480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/sealTwo320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+            <picture class="seal2">
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/sealThree480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/sealThree320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+            <picture class="seal3">
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/sealOne480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/sealOne320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+            <picture class="pineapple4">
+              <source
+                media="(min-width: 480px)"
+                srcset="./img/pineappleTwo480.png"
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="./img/pineappleTwo320.png"
+              />
+              <img src="./img/caixa1.png" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="subscribe">
+        <div class="socialMedia">
+          <h3>FOLLOW US</h3>
+          <div class="socialMediaIcons">
+            <i class="flaticon-facebook"></i>
+            <i class="flaticon-twitter-logo-silhouette"></i>
+            <i class="flaticon-google-plus"></i>
+          </div>
+        </div>
+        <div class="moreFrom">
+          <h3>MORE FROM</h3>
+          <a class="logo-text text-center" href="#">ANANAS</a>
+        </div>
+        <form
+          id="form"
+          class="submit"
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+        >
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            aria-label="email"
+            required
+          />
+          <input id="submit" class="submit-btn" type="submit" />
+        </form>
+      </section>
+      <aside class="footer-summary">
+        <p class="copyright">copyright 2018</p>
+        <a class="backToTop" href="#">Back to Top</a>
+      </aside>
+    </footer>
 
-
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-</body>
-
+    <!--
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    -->
+  </body>
 </html>

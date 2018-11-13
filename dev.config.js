@@ -5,6 +5,7 @@ const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/js/main')
